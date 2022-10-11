@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+<!--inico banner-->
+<body>
+    <header>
+        <div class="welcomeBanner">
+            <H1>Glass Animals</H1>
+        </div>
+            <nav>
+                <ul class="navBar">
+                    <li><a href="./bio.html">Bio</a></li>
+                    <li><a href="./media.html">Media</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./store.html">Store</a></li>
+                    <li><a href="./subscribe.html">Subscribe</a></li>
+                </ul>
+            </nav>
+    </header>
+<!--termina banner-->
+    <main>
+        <form action="" method="GET" enctype="text/plain">
+            <fieldset>
+                <legend>Join mailing list</legend>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required placeholder="Name">
+                        <label for="surname">Surname</label>
+                        <input type="text" name="surname" id="surname" required placeholder="Surname">
+                    </div>
+                    <div>
+                        <label for="date">Date of birth</label>
+                        <input type="date" name="date" id="date" min="1950-01-01">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <strong>Options</strong>
+                            <div>
+                                <label for="newReleases">New releases</label>
+                                <input type="checkbox" name="newReleases" id="newReleases">
+                            </div>
+                            <div>
+                                <label for="upcomingShows">Upcoming shows</label>
+                                <input type="checkbox" name="upcomingShows" id="upcomingShows">
+                            </div>
+                            <div>
+                                <label for="merchDrop">Merch drop</label>
+                                <input type="checkbox" name="merchDrop" id="merchDrop">
+                            </div>
+                    </div>
+                    <div>
+                        <label for="termsAndConditions">Accept terms and conditions</label>
+                        <label for="yesTerms">Yes</label>
+                        <input type="radio" name="termsAndConditions" id="yesTerms" value="Yes">
+                    </div>
+            </fieldset>
+            <input type="reset" value="Clear form"></input>
+            <input type="submit" value="Submit form"></input>
+        </form>
+    </main>
+<!--footer-->
+    <footer class="footer">
+        <section class="socialAndMedia">
+            <h3>Networks</h3>
+            <div class="networks">
+                <a href="https://www.instagram.com/GlassAnimals/"><img class="iconStyle" src="../assets/instagram.png" alt=""></a>
+                <a href="https://soundcloud.com/glassanimals"><img class="iconStyle" src="../assets/soundcloud.png" alt=""></a>
+                <a href="https://open.spotify.com/artist/4yvcSjfu4PC0CYQyLy4wSq"><img class="iconStyle" src="../assets/spotify.png" alt=""></a>
+                <a href="https://www.youtube.com/user/glassanimalsband"><img class="iconStyle" src="../assets/youtube.png" alt=""></a>
+            </div>
+        </section>
+    </footer>
+<!--footer-->
+    
+</body>
+</html>
