@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Silkscreen&display=swap');
-/**
+/*
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Silkscreen', cursive;
 */
@@ -13,6 +13,7 @@ html{
 }
 body{
     height: 100vh;
+    background-color: rgb(247, 247, 247);
 }
 header{
     width: 100%;
@@ -30,10 +31,12 @@ header{
 }
 h1{
     font-size: 4.0rem;
+    font-weight: bold;
     justify-self: center;
     align-self: center;
+    color:antiquewhite;
 }
-/** barra de navegacion **/
+/*----barra de navegacion-----*/
 nav{
     align-self: center;
 }
@@ -52,30 +55,15 @@ nav{
 .navBar li a:hover{
     color: rgba(255, 0, 128, 0.394);
 }
-/** fin barra de navegacion **/
+/*------fin barra de navegacion------*/
 
-/** main **/
+/*-------main--------*/
 
 .text{
     font-family: 'Noto Sans', sans-serif;
     font-size: 2.0rem;
     justify-self: center;
     align-self: center;
-}
-
-.textBio{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 2.0rem;
-    justify-self: center;
-    align-self: center;
-    display: inline-block;
-}
-.textBio2{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 2.0rem;
-    justify-self: center;
-    align-self: center;
-    display: inline-block;
 }
 
 h2{
@@ -90,26 +78,164 @@ h3{
     font-size: 2.0rem;
     justify-self: center;
     align-self: center;
+    color:antiquewhite;
 }
 
-.bandBioPic{
+/*------bio--------*/
+
+.bioMain{
+    justify-self: center;
+    align-self: center;
+    display: block;
+    background-image: url(../assets/BandBio2.jpeg);
+    background-size: 100%;
+    background-position: fixed;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+}
+.textBio{
+    font-family: 'Noto Sans';
+    font-size: 2.0rem;
+    color:rgba(251, 232, 199, 0.781);
+    
+}
+.textBio2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.0rem;
+    justify-self: center;
+    align-self: center;
+    display: inline-block;
+}
+
+
+.bandBioPics{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    text-decoration: none;
+}
+
+.daveB{
+    justify-self:center;
+    font-family: 'Noto Sans';
+    align-self:flex-end;
+    display: inline;
+    text-decoration: none;
+    background-image: url(../assets/BioDave.jpeg);
+    background-repeat: no-repeat;
+    background-position: fixed;
     height: 100%;
     width: 100%;
-    background-position: center;
-    display: 100vh;
-    background-attachment:fixed;
+    
+}
+.drewM{
+    justify-self: center;
+    font-family: 'Noto Sans';
+    align-self:flex-end;
+    display: inline;
+    text-decoration: none;
+    background-image: url(../assets/BioDrew.jpeg);
     background-repeat: no-repeat;
+    background-position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.edmundI{
+    justify-self: center;
+    font-family: 'Noto Sans';
+    align-self:flex-end;
+    display: inline;
+    text-decoration: none;
+    background-image: url(../assets/BioEdmund.jpeg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.joeS{
+    justify-self: center;
+    font-family: 'Noto Sans';
+    align-self:flex-end;
+    display: inline;
+    text-decoration: none;
+    background-image: url(../assets/BioJoe.jpeg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.albums{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.album1{
+    background-image: url(../assets/zaba.jpeg); 
+    background-size: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: contain ;
+}
+.album2{
+    background-image: url(../assets/htbhb.jpeg);
+    background-size: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: contain ;
+}
+.album3{
+    background-image: url(../assets/dreamland.png);
+    background-size: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: contain ;
+}
+
+/*-----fin bio------*/
+
+.mainHome {
+    height: 100vh;
 }
 
 .tourDates{
-    background-image: url("../assets/tourBand.jpeg");
-    background-size: 100%;
+    /*background-image: url("../assets/tourDates.webp");
+    background-size: 500px;
+    background-repeat: no-repeat;*/
+    margin-bottom: 50px;
     height: 100%;
     width: 100%;
     background-position: center;
-    display:100%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
     background-attachment:scroll;
-    background-repeat:no-repeat;
+
+}
+
+
+.date1{
+    background-image: url("../assets/France.jpg");
+    background-size: 100%;
+    display:inline-block;
+}
+.date2{
+    background-image: url("../assets/London.jpeg");
+    background-size: 100%;
+    display:grid;
+}
+.date3{
+    background-image: url("../assets/BuenosAires.webp");
+    background-size: 100%;
+    display:grid;
+}
+.date4{
+    background-image: url("../assets/Mendoza.jpeg");
+    background-size: 100%;
+    display:grid;
 }
 .mediaVideo{
     position: left;
@@ -125,10 +251,38 @@ h3{
     text-decoration:none;
 }
 
+/*------Subscribe--------*/
 
-/** fin main **/
+.mailingList{
+    font-family: 'Noto Sans' ;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
 
-/** footer **/
+.subInfo{
+    height: 100%;
+    background-color:antiquewhite;
+}
+
+
+/*------Fin Subscribe--------*/
+
+/*------Store--------*/
+
+.storeItems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: content-box;
+    position: center;
+}
+
+/*------Fin Store--------*/
+
+/*------fin mains------*/
+
+
+/*-------footer------*/
 .footer{
     background-image: url("../assets/bannerBackground.jpeg");
     background-repeat: no-repeat;
@@ -151,9 +305,9 @@ h3{
 .networks{
     height: 15%;
     width: 100%;
-    display: inline-block;
-    display: flex;
-    justify-self: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content:right;
     gap: 20px;
 }
 .iconStyle{
@@ -162,4 +316,4 @@ h3{
     margin-top:5px;
 }
 
-/** fin footer **/
+/*-----fin footer------*/
