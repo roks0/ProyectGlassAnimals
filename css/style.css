@@ -187,6 +187,7 @@ h3{
 .album2{
     background-image: url(../assets/htbhb.jpeg);
     background-size: 100%;
+    background-repeat: no-repeat;
     height: 35vh;
     width: 100%;
     object-fit: contain ;
@@ -194,6 +195,7 @@ h3{
 .album3{
     background-image: url(../assets/dreamland.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     height: 35vh;
     width: 100%;
     object-fit: contain ;
