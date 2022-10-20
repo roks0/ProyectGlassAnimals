@@ -83,21 +83,26 @@ h3{
 
 /*------bio--------*/
 
+/*mejorar visibilidad texto*/
 .bioMain{
     justify-self: center;
     align-self: center;
-    display: block;
-    background-image: url(../assets/BandBio2.jpeg);
+    display: inline-block;
+    background-image: url(../assets/bandBio3.jpeg);
     background-size: 100%;
-    background-position: fixed;
+    opacity: 0.95;
+    background-position: center;
     background-attachment:scroll;
     background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
 }
 .textBio{
     font-family: 'Noto Sans';
     font-size: 2.0rem;
-    color:rgba(251, 232, 199, 0.781);
-    
+    color:rgba(33, 32, 32, 0.954);
+    text-shadow: rgb(0, 0, 0);
+    font-weight:bold;
 }
 .textBio2{
     font-family: 'Noto Sans', sans-serif;
@@ -107,9 +112,7 @@ h3{
     display: inline-block;
 }
 
-
 .bandBioPics{
-
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(1,1fr);
@@ -125,7 +128,7 @@ h3{
     background-image: url(../assets/BioDave.jpeg);
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 100%;
+    height: 35vh;
     width: 100%;
     
 }
@@ -138,7 +141,7 @@ h3{
     background-image: url(../assets/BioDrew.jpeg);
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 100%;
+    height: 35vh;
     width: 100%;
 }
 .edmundI{
@@ -150,7 +153,7 @@ h3{
     background-image: url(../assets/BioEdmund.jpeg);
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 100%;
+    height: 35vh;
     width: 100%;
 }
 .joeS{
@@ -162,13 +165,13 @@ h3{
     background-image: url(../assets/BioJoe.jpeg);
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 100%;
+    height: 35vh;
     width: 100%;
 }
 .albums{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
     text-decoration: none;
     list-style: none;
     justify-content: space-evenly;
@@ -176,21 +179,22 @@ h3{
 .album1{
     background-image: url(../assets/zaba.jpeg); 
     background-size: 100%;
-    height: auto;
+    background-repeat: no-repeat;
+    height: 35vh;
     width: 100%;
     object-fit: contain ;
 }
 .album2{
     background-image: url(../assets/htbhb.jpeg);
     background-size: 100%;
-    height: auto;
+    height: 35vh;
     width: 100%;
     object-fit: contain ;
 }
 .album3{
     background-image: url(../assets/dreamland.png);
     background-size: 100%;
-    height: auto;
+    height: 35vh;
     width: 100%;
     object-fit: contain ;
 }
@@ -211,31 +215,99 @@ h3{
     background-position: center;
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
     background-attachment:scroll;
-
 }
-
+@media (max-width: 576px) {
+    .tourDates{
+        display: grid;
+        grid-template-columns: 1,1fr;
+        grid-template-rows: 1,1fr;
+        box-sizing: content-box;
+        position: center;
+    }
+}
+@media (max-width: 768px) {
+    .store{
+        display: grid;
+        grid-template-columns: 2,1fr;
+        grid-template-rows: 2,1fr;
+        box-sizing: content-box;
+        position: center;
+    }
+}
 
 .date1{
     background-image: url("../assets/France.jpg");
     background-size: 100%;
-    display:inline-block;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    width:100%;
 }
 .date2{
     background-image: url("../assets/London.jpeg");
     background-size: 100%;
-    display:grid;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    width:100%;
 }
 .date3{
     background-image: url("../assets/BuenosAires.webp");
     background-size: 100%;
-    display:grid;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    width:100%;
 }
 .date4{
     background-image: url("../assets/Mendoza.jpeg");
     background-size: 100%;
-    display:grid;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    width:100%;
+}
+.date5{
+    background-image: url("../assets/Madrid.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    width:100%;
+}
+.date6{
+    background-image: url("../assets/Newzealand.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    width:100%;
+}
+.date7{
+    background-image: url("../assets/SouthAfrica.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    width:100%;
+}
+.date8{
+    background-image: url("../assets/Washington.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    width:100%;
 }
 .mediaVideo{
     position: left;
@@ -269,12 +341,54 @@ h3{
 
 /*------Store--------*/
 
+.store{
+    display: grid;
+    grid-template-columns: 4,1fr;
+    grid-template-rows: 2,1fr;
+    box-sizing: content-box;
+    position: center;
+}
+@media (max-width: 576px) {
+    .store{
+        display: grid;
+        grid-template-columns: 1,1fr;
+        grid-template-rows: 1,1fr;
+        box-sizing: content-box;
+        position: center;
+    }
+}
+@media (max-width: 768px) {
+    .store{
+        display: grid;
+        grid-template-columns: 2,1fr;
+        grid-template-rows: 2,1fr;
+        box-sizing: content-box;
+        position: center;
+    }
+}
 .storeItems{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    box-sizing: content-box;
+    flex-wrap: wrap;
     position: center;
+}
+
+.hoodie{
+    height: 35vh;
+    width: 35vh;
+
+}
+.vinyl{
+    height: 35vh;
+    width: 35vh;
+}
+.cd{
+    height: 35vh;
+    width: 35vh;
+}
+.vhs{   
+    height: 35vh;
+    width: 35vh;
 }
 
 /*------Fin Store--------*/
