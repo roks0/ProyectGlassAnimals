@@ -43,10 +43,10 @@ nav{
 .navBar{
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 50px;
     font-size: 2.5rem;
-    margin-top: 10px;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 .navBar li a{
     text-decoration: none;
@@ -103,6 +103,7 @@ h3{
     color:rgba(33, 32, 32, 0.954);
     text-shadow: rgb(0, 0, 0);
     font-weight:bold;
+    margin-top: 8%;
 }
 .textBio2{
     font-family: 'Noto Sans', sans-serif;
@@ -127,9 +128,11 @@ h3{
     text-decoration: none;
     background-image: url(../assets/BioDave.jpeg);
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-position:fixed;
     height: 35vh;
     width: 100%;
+    margin-top: 10%;
+    margin-bottom: auto;
     
 }
 .drewM{
@@ -143,6 +146,8 @@ h3{
     background-position: fixed;
     height: 35vh;
     width: 100%;
+    margin-top: 10%;
+    margin-bottom: auto;
 }
 .edmundI{
     justify-self: center;
@@ -173,32 +178,52 @@ h3{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1,1fr);
     text-decoration: none;
+    color: rgb(10, 0, 9);
+    text-shadow: rgb(255, 255, 255);
+    font-weight: bolder;
     list-style: none;
     justify-content: space-evenly;
+    gap: 5%;
 }
 .album1{
     background-image: url(../assets/zaba.jpeg); 
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
     height: 35vh;
     width: 100%;
     object-fit: contain ;
+    margin-top: 5%;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.album1 a:hover{
+    color: rgb(255, 255, 255);
 }
 .album2{
     background-image: url(../assets/htbhb.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
     height: 35vh;
     width: 100%;
     object-fit: contain ;
+    margin-top: 5%;
+    text-decoration: none;
+    font-size: 1.6rem;
+    
 }
 .album3{
     background-image: url(../assets/dreamland.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
     height: 35vh;
     width: 100%;
     object-fit: contain ;
+    margin-top: 5%;
+    text-decoration: none;
+    font-size: 1.6rem;
 }
 
 /*-----fin bio------*/
@@ -211,14 +236,16 @@ h3{
     /*background-image: url("../assets/tourDates.webp");
     background-size: 500px;
     background-repeat: no-repeat;*/
-    margin-bottom: 50px;
+    margin-bottom: 2%;
+    margin-top: 2%;
     height: 100%;
     width: 100%;
+    padding: 2%;
     background-position: center;
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
-    background-attachment:scroll;
+    background-attachment:scroll;  
 }
 @media (max-width: 576px) {
     .tourDates{
@@ -245,8 +272,6 @@ h3{
     background-repeat: no-repeat;
     display:flex;
     flex-wrap: nowrap;
-    height:100%;
-    width:100%;
 }
 .date2{
     background-image: url("../assets/London.jpeg");
@@ -254,8 +279,6 @@ h3{
     background-repeat: no-repeat;
     display:flex;
     flex-wrap: nowrap;
-    height:100%;
-    width:100%;
 }
 .date3{
     background-image: url("../assets/BuenosAires.webp");
@@ -263,8 +286,6 @@ h3{
     background-repeat: no-repeat;
     display:flex;
     flex-wrap: nowrap;
-    height:100%;
-    width:100%;
 }
 .date4{
     background-image: url("../assets/Mendoza.jpeg");
@@ -272,8 +293,6 @@ h3{
     background-repeat: no-repeat;
     display:flex;
     flex-wrap: nowrap;
-    height:100%;
-    width:100%;
 }
 .date5{
     background-image: url("../assets/Madrid.jpeg");
@@ -281,8 +300,6 @@ h3{
     background-repeat: no-repeat;
     display:flex;
     flex-wrap: nowrap;
-    height:100%;
-    width:100%;
 }
 .date6{
     background-image: url("../assets/Newzealand.jpeg");
@@ -290,8 +307,6 @@ h3{
     background-repeat: no-repeat;
     display:flex;
     flex-wrap: nowrap;
-    height:100%;
-    width:100%;
 }
 .date7{
     background-image: url("../assets/SouthAfrica.jpeg");
@@ -299,8 +314,6 @@ h3{
     background-repeat: no-repeat;
     display:flex;
     flex-wrap: nowrap;
-    height:100%;
-    width:100%;
 }
 .date8{
     background-image: url("../assets/Washington.jpeg");
@@ -308,8 +321,6 @@ h3{
     background-repeat: no-repeat;
     display:flex;
     flex-wrap: nowrap;
-    height:100%;
-    width:100%;
 }
 .mediaVideo{
     position: left;
